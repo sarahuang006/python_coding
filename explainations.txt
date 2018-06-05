@@ -1,0 +1,99 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf340
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red72\green72\blue72;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b\fs28 \cf0 # Question 1\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\sl288\slmult1\pardirnatural\partightenfactor0
+
+\b0 \cf0 Data structure: I use a defaultdic to count the number of letters in each string. I first increase the counting for string s and then decrease the counting for String t. So if at any point, any counting is below zero , which means t contains a letter not in s  and they are not anagrams and return false immediately. \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+Time complexity : O(n) because it access the dictionary at a constant time operation\
+\
+Space complexity : O(1) because the dictionary size stay constant 
+\fs24 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl360\sa200\partightenfactor0
+\ls1\ilvl0
+\fs32 \cf2 \expnd0\expndtw0\kerning0
+\uc0\u8232 
+\fs24 \cf0 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\b\fs28 \cf0 # Question 2\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\b0 \cf0 Palindrome mirrors around its center and thus can be expanded from its center. A helper function is used to return  a palindrome for a certain center. And then compare the length of palindrome and return the longest one. 
+\b \
+\
+
+\b0 Time complexity : O(n^2) since it expands from the center which could take O(n) time \
+\
+Space complexity : O(1)
+\fs32 \cf2 \expnd0\expndtw0\kerning0
+\uc0\u8232 \
+
+\fs28 \cf0 \kerning1\expnd0\expndtw0 \
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\b \cf0 #Question 3\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\b0 \cf0 \
+Finding a minimum spanning tree in undirected graph employs Kruskal\'92s algorithm. First of all take the input and make it (u, v weight) list graph and then sort the graph edges with respect to their weight. Second constructing MST by creating a forest where each vertex in the graph is a separate tree and then join them together by adding edges. \
+\
+Time complexity is O(ElogV) mainly due to the sort procedure , E is the number of edges , V is the number of vertices.\
+\
+Space complexity : O(n)\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\b \cf0 #Question 4\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\b0 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\sl288\slmult1\pardirnatural\partightenfactor0
+\cf0 The algorithm is to use a set to store the parent of node n1 till the root, if any parent of node n2 can be found in this set, that parent is the lowest common ancestor.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+The time complexity is O(log(n)) since it is a binary search tree, the worst case is traversal the whole tree and the lowest common ancestor is the root. \
+\
+Space complexity is O(n). it is related to the height of the tree
+\fs24 . \
+\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\b\fs28 \cf0 #Question 5\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\b0 \cf0 The methodology is using two-pointers (fast and slow ) to solve this problem . Fast pointer advances m nodes first and then move with the slow one at the same time. When fast pointer reach null , the slow one points the math node from the end. 
+\b \
+\
+
+\b0 The time complexity is O(L)  because the algorithm make one traversal of the list L.\
+\
+Space complexity is O(1) because we used only constant extra space
+\b\fs24 .
+\f1 \
+\
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl360\sa200\partightenfactor0
+\ls2\ilvl0
+\f0\b0\fs32 \cf2 \expnd0\expndtw0\kerning0
+\uc0\u8232 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \kerning1\expnd0\expndtw0 \
+\
+\
+}
